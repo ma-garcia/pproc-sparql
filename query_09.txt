@@ -10,8 +10,8 @@ WHERE {
   pc:tender ?tender .
   ?tender pproc:formalizedDate ?formalizedDate ;
   a pproc:FormalizedTender ;
-  pproc:supplier ?supplier ;
-  pproc:offeredPrice ?offeredPrice .
+  pc:supplier ?supplier ;
+  pc:offeredPrice ?offeredPrice .
   ?supplier s:name ?name .
   ?offeredPrice gr:hasCurrencyValue ?currencyValue ;
   gr:valueAddedTaxIncluded ?taxIncluded .
