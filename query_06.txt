@@ -8,7 +8,7 @@ WHERE {
   ?uriCont a pproc:Contract ;
   pc:tender ?tender .
   ?tender pproc:awardDate ?awardDate ;
-  pproc:supplier ?supplier .
+  pc:supplier ?supplier .
   ?supplier s:name ?name
   FILTER regex(?awardDate, "2014")
 }
